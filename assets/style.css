@@ -1,0 +1,202 @@
+        :root {
+            --primary-blue: #0056b3;
+            --dark-text: #1a1a1a;
+            --accent-red: #d9534f;
+             --primary-blue: #2A73C0;
+            --text-dark: #212529;
+            --bg-light: #ffffff;
+            --card-bg: #fdfdfd; 
+            --border-color: #e9ecef; 
+        }
+
+        body {
+            color: var(--dark-text);
+            background-color: #fff;
+            background-image: url();
+            overflow-x: hidden;
+                        font-family: 'Montserrat', sans-serif;
+
+        }
+.bg-grid-pattern {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+    background-size: 30px 30px;
+}
+        .top-bar {
+            background-color: #fff1f1;
+            border-bottom: 1px solid #ffe0e0;
+            padding: 10px 0;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--accent-red);
+        }
+
+        .attention-badge {
+            background: #f8f9fa;
+            border: 1px dashed #ccc;
+            padding: 5px 15px;
+            display: inline-block;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            letter-spacing: 1px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-weight: 800;
+            font-size: clamp(1.8rem, 5vw, 3.5rem);
+            line-height: 1.2;
+        }
+        .text-blue { color: var(--primary-blue); }
+
+        .sub-labels {
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #555;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            padding: 10px 0;
+        }
+
+        .info-box {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            padding-right: 15px;
+        }
+        .info-icon {
+            font-size: 2rem;
+            color: var(--primary-blue);
+            margin-bottom: 10px; 
+        }
+        .info-text div:first-child {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            color: #888;
+        }
+        .info-text div:last-child {
+            font-weight: 700;
+            font-size: 1rem;
+        }
+
+        .btn-cta {
+            background: linear-gradient(to right, #0052D4, #4364F7, #6FB1FC);
+            color: white;
+            padding: 20px 40px;
+            font-size: 1.4rem;
+            font-weight: 800;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 10px 20px rgba(0,82,212,0.3);
+            transition: transform 0.3s;
+            width: 100%;
+            max-width: 600px;
+        }
+        .btn-cta:hover {
+            transform: scale(1.02);
+            color: white;
+        }
+        .strike-price {
+            text-decoration: line-through;
+            opacity: 0.6;
+            margin-left: 10px;
+            font-weight: 400;
+        }
+
+        .progress-container {
+            max-width: 500px;
+            margin: 20px auto;
+        }
+        .progress { height: 10px; border-radius: 10px; }
+        .progress-bar { background-color: #cc0000; }
+        
+        .timer-text {
+            font-size: 0.85rem;
+            font-weight: 700;
+        }
+
+        .trainer-img {
+            max-width: 100%;
+            height: auto;
+            filter: drop-shadow(0 10px 20px rgba(0,0,0,0.1));
+        }
+/* 2nd css start  */
+   .trusted-section {
+            padding: 80px 0;
+        }
+
+        .trusted-section .section-title {
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 800;
+            color: var(--text-dark);
+            margin-bottom: 50px;
+            font-size: clamp(1.2rem, 5vw, 1.6rem);
+            animation: fadeInDown 0.8s ease-out forwards;
+        }
+
+        .trusted-section .section-title span {
+            color: var(--primary-blue);
+        }
+
+        .trusted-section .logo-card {
+            background-color: var(--card-bg); 
+            border: 1px solid var(--border-color); 
+            border-radius: 12px;
+            padding: 30px; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 140px;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            opacity: 0; 
+            animation: fadeInUp 0.6s ease-out forwards;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02); 
+        }
+
+        .trusted-section .logo-card img {
+            max-width: 100%;
+            max-height: 80px;
+            object-fit: contain;
+            filter: grayscale(100%);
+            opacity: 0.8;
+            transition: all 0.3s ease;
+        }
+
+        .trusted-section .logo-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--primary-blue);
+            background-color: #ffffff;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+        }
+
+        .trusted-section .logo-card:hover img {
+            filter: grayscale(0%);
+            opacity: 1;
+            transform: scale(1.05);
+        }
+
+        .trusted-section .col:nth-child(1) .logo-card { animation-delay: 0.1s; }
+        .trusted-section .col:nth-child(2) .logo-card { animation-delay: 0.2s; }
+        .trusted-section .col:nth-child(3) .logo-card { animation-delay: 0.3s; }
+        .trusted-section .col:nth-child(4) .logo-card { animation-delay: 0.4s; }
+        .trusted-section .col:nth-child(5) .logo-card { animation-delay: 0.5s; }
+        .trusted-section .col:nth-child(6) .logo-card { animation-delay: 0.6s; }
+        .trusted-section .col:nth-child(7) .logo-card { animation-delay: 0.7s; }
+        .trusted-section .col:nth-child(8) .logo-card { animation-delay: 0.8s; }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 576px) {
+            .trusted-section .logo-card { height: 110px; padding: 15px; }
+        }

@@ -1415,3 +1415,10 @@
         .collapsing {
             transition: height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
+        .DIFFERENT{
+            padding: 10px 150px;
+        }
+        @media screen and (max-width:888px){
+.DIFFERENT{
+            padding: 0px;
+        }        }

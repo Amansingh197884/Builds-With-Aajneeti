@@ -16,7 +16,7 @@
 
         body {
             color: var(--dark-text);
-           
+           overflow-x: hidden;
             font-family: 'Montserrat', sans-serif;
 
         }
@@ -706,6 +706,7 @@
             display: flex;
             align-items: flex-start;
             opacity: 0;
+            text-align: start;
             animation: fadeInItem 0.5s ease-out forwards;
         }
 

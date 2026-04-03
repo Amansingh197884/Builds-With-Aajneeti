@@ -1,8 +1,8 @@
         :root {
-            --primary-blue: #0056b3;
+            --primary-blue: ##4048d6;
             --dark-text: #1a1a1a;
             --accent-red: #d9534f;
-            --primary-blue: #2A73C0;
+            --primary-blue: #4048d6;
             --text-dark: #212529;
             --bg-light: #ffffff;
             --card-bg: #fdfdfd;
@@ -70,7 +70,7 @@
         }
 
         h1 {
-            font-weight: 800;
+            font-weight: bolder;
             font-size: clamp(1.8rem, 5vw, 3.5rem);
             line-height: 1.2;
         }
@@ -207,11 +207,12 @@
         .section-title {
             text-transform: uppercase;
             letter-spacing: 1px;
-            font-weight: bold;
+            font-weight: bolder;
             color: var(--text-dark);
             margin-bottom: 50px;
             font-size: clamp(1.2rem, 5vw, 2.1rem);
             animation: fadeInDown 0.8s ease-out forwards;
+            font-family: Georgia, 'Times New Roman', Times, serif;
         }
 
         .section-title span {

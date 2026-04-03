@@ -16,9 +16,7 @@
 
         body {
             color: var(--dark-text);
-            background-color: #fff;
-            background-image: url();
-            /* overflow-x: hidden !important; */
+           
             font-family: 'Montserrat', sans-serif;
 
         }
@@ -1432,17 +1430,14 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
         }
 
-        /* Styling for the active/open state */
         .accordion-item.active-item {
             background-color: #f4f9f6;
-            /* Light green tint */
-            border-color: #d1fae5 !important;
+            border-color: #0052D4 !important;
         }
 
         .accordion-button {
             font-weight: 600;
             color: #3b3abe;
-            /* Purple color from image */
             padding: 20px;
             box-shadow: none !important;
             background: transparent !important;
